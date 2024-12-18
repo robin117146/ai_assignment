@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #0078D7;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+main {
+    padding: 20px;
+}
+
+td:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#game {
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.answer-input {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.result {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#submit-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #45a049;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+

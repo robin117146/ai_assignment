@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <h2>Periodic Table</h2>
+    <div class="periodic-table">
+        {% for element in elements %}
+        <div class="element" onclick="showDetails('{{ element.name }}', '{{ element.details }}')">
+            <span class="symbol">{{ element.symbol }}</span>
+            <span class="number">{{ element.atomic_number }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="elementModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="elementName"></h3>
+        <p id="elementDetails"></p>
+    </div>
+</div>
+<script>
+function showDetails(name, details) {
+    const modal = document.getElementById("elementModal");
+    document.getElementById("elementName").textContent = name;
+    document.getElementById("elementDetails").textContent = details;
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    const modal = document.getElementById("elementModal");
+    modal.style.display = "none";
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+    const modal = document.getElementById("elementModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+</script>
+{% endblock %}

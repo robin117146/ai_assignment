@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+
+{% block title %}Chemistry Puzzle{% endblock %}
+
+{% block content %}
+<h2>Match the Elements with Their Symbols</h2>
+<p>Test your knowledge of the periodic table! Enter the correct symbol for each element:</p>
+
+<form method="POST">
+    {% for element in elements %}
+        <label for="{{ element.name }}">{{ element.name }}:</label>
+        <input type="text" id="{{ element.name }}" name="{{ element.name }}" required>
+        <br>
+    {% endfor %}
+    <button type="submit">Submit Answers</button>
+</form>
+
+{% if results %}
+    <h3>Results:</h3>
+    <ul>
+        {% for result in results %}
+            <li>
+                {{ result.element }}: 
+                {% if result.correct %}
+                    <span style="color: green;">Correct! ({{ result.user_answer }})</span>
+                {% else %}
+                    <span style="color: red;">Incorrect. Your answer: {{ result.user_answer }} | Correct answer: {{ result.correct_answer }}</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}
+

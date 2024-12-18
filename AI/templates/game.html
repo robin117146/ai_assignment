@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Chemistry Game{% endblock %}
+
+{% block content %}
+<h2>Chemistry Game: Match Elements with Their Symbols</h2>
+<p>Type the symbol for each element and see how many you can match correctly!</p>
+
+<div id="game">
+    <div id="questions">
+        {% for element in elements %}
+            <div class="question">
+                <span>{{ element.name }}:</span>
+                <input type="text" class="answer-input" data-element="{{ element.name }}" />
+                <span class="result" id="result-{{ element.name }}"></span>
+            </div>
+        {% endfor %}
+    </div>
+    <button id="submit-btn">Submit Answers</button>
+    <div id="score"></div>
+</div>
+
+
+
+<script>
+    document.getElementById("submit-btn").addEventListener("click", () => {
+        const inputs = document.querySelectorAll(".answer-input");
+        let score = 0;
+
+        inputs.forEach(input => {
+            const elementName = input.dataset.element;
+            const userAnswer = input.value.trim();
+
+            fetch("/check_answer", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ element_name: elementName, user_answer: userAnswer })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultSpan = document.getElementById(`result-${elementName}`);
+                if (data.correct) {
+                    resultSpan.textContent = "✔️ Correct!";
+                    resultSpan.style.color = "green";
+                    score++;
+                } else {
+                    resultSpan.textContent = `❌ Incorrect! (Correct: ${data.correct_symbol})`;
+                    resultSpan.style.color = "red";
+                }
+                document.getElementById("score").textContent = `Your Score: ${score} / ${inputs.length}`;
+            });
+        });
+    });
+</script>
+{% endblock %}

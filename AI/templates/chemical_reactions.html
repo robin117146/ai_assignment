@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+     <h2>Enter a Chemical Reaction</h2>
+        <form action="{{ url_for('chemical_reactions') }}" method="POST">
+            <div class="form-group">
+                <label for="reaction">Reaction (e.g., H2 + O2 → H2O):</label>
+                <input type="text" id="reaction" name="reaction" placeholder="Enter reaction here..." required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Analyze Reaction</button>
+            </div>
+        </form>
+
+
+    <!-- Output Section -->
+    {% if reaction_result %}
+    <section class="output-section">
+        <h2>Reaction Analysis</h2>
+        <p><strong>Input Reaction:</strong> {{ input_reaction }}</p>
+        <p><strong>Balanced Reaction:</strong> {{ reaction_result }}</p>
+    </section>
+    {% endif %}
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#ChemicalBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#ChemicalReaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#LearningResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Metal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Metalloid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#NonMetal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#PeriodicTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Progress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Login"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Register"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Tutoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#isEvaluatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#usesResource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasAtomicNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasSymbol"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#ChemicalBonding"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#ChemicalReaction"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#PeriodicTable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Feedback"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Game"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Metal"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Metalloid"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#NonMetal"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Performance"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Game"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Performance"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Tutoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#PeriodicTable"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Progress"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Score"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Student"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#User"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Login"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Register"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#Tutoring"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasActivity"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasAtomicNumber"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasName"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasSymbol"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#includes"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#PeriodicTable"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#isEvaluatedBy"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#participatesIn"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#usesResource"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#hasActivity"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#includes"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#isEvaluatedBy"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Performance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#participatesIn"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#Home"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#usesResource"/>
+        <Class IRI="file://apporto.com/dfs/YSJ/Users/shahasshameer_ysj/Downloads/ontologyrobin.xml#LearningResource"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

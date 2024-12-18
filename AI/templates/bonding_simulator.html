@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Bonding Simulator{% endblock %}
+
+{% block content %}
+
+    <h2>Chemistry Bonding Simulator</h2>
+         
+    <form method="POST">
+        <label for="element1">Element 1:</label>
+        <input type="text" id="element1" name="element1" required>
+        <br>
+        <label for="element2">Element 2:</label>
+        <input type="text" id="element2" name="element2" required>
+        <br>
+        <button type="submit">Simulate Bond</button>
+    </form>
+
+{% if bonding_result %}
+        <div class="result">
+            <h2>Simulation Result</h2>
+            <p>{{ bonding_result }}</p>
+        </div>
+        {% endif %}
+
+  
+
+	
+
+
+{% endblock %}
